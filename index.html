@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Bem-vindo</title>
+</head>
+<body>
+  <div class="welcome-container">
+    <h1>Bem-vindo à Página de Boas-Vindas</h1>
+    <button id="enterButton">Entrar</button>
+    <div id="userForm" class="hidden">
+      <label for="name">Nome:</label>
+      <input type="text" id="name">
+      <label for="age">Idade:</label>
+      <input type="number" id="age">
+      <label for="phone">Telefone:</label>
+      <input type="text" id="phone">
+      <button id="submitForm">Enviar</button>
+    </div>
+    <div id="userData" class="hidden">
+      <h2>Dados do Usuário:</h2>
+      <p><strong>Nome:</strong> <span id="userDataName"></span></p>
+      <p><strong>Idade:</strong> <span id="userDataAge"></span></p>
+      <p><strong>Telefone:</strong> <span id="userDataPhone"></span></p>
+      <p>Você pode <a id="accessLink" href="#">acessar o site de sorteio</a>.</p>
+    </div>
+  </div>
+  <script src="script.js">
+
+const enterButton = document.getElementById('enterButton');
+const userForm = document.getElementById('userForm');
+const submitFormButton = document.getElementById('submitForm');
+const userData = document.getElementById('userData');
+const userDataName = document.getElementById('userDataName');
+const userDataAge = document.getElementById('userDataAge');
+const userDataPhone = document.getElementById('userDataPhone');
+const accessLink = document.getElementById('accessLink');
+
+enterButton.addEventListener('click', () => {
+  userForm.classList.remove('hidden');
+  enterButton.style.display = 'none';
+});
+
+submitFormButton.addEventListener('click', () => {
+  const name = document.getElementById('name').value;
+  const age = document.getElementById('age').value;
+  const phone = document.getElementById('phone').value;
+
+  userDataName.textContent = name;
+  userDataAge.textContent = age;
+  userDataPhone.textContent = phone;
+
+  userForm.classList.add('hidden');
+  userData.classList.remove('hidden');
+  accessLink.href = 'pagina-de-sorteio.html';
+  accessLink.style.display = 'inline';
+});
+
+  </script>
+</body>
+</html>

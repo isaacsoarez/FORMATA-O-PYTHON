@@ -1,0 +1,86 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+  }
+  
+  .welcome-container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  h1 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+  }
+  
+  #submitForm {
+    margin-top: 15px;
+  }
+  
+  #userData {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #userData h2 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  #userData p {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  #accessLink {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  #accessLink:hover {
+    text-decoration: underline;
+  }
+  
